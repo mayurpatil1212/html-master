@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML - Canvas</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        body {
+            background: dodgerblue;
+        }
+        canvas {
+            background: white;
+            margin: 10% auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="200" height="200"></canvas>
+
+    <script>
+        let canvas = document.querySelector('canvas')
+        let line = canvas.getContext('2d')
+        line.moveTo(0, 0)
+        line.lineTo(200, 200)
+        // line.strokeStyle = '#ff0000'
+        line.stroke()
+    </script>
+</body>
+</html>

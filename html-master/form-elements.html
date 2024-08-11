@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Form Elements</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        form {
+            width: 90%;
+            max-width: 300px;
+            margin: 10% auto;
+            padding: 16px;
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        input {
+            width: 100%;
+            margin: 0;
+        }
+        input[type=submit] {
+            cursor: pointer;
+            background: lightblue;
+            border: 0;
+            padding: 4px 8px;
+        }
+        input[type=submit]:hover {
+            background: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <form action="thankyou.html" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+                <label for="text">Text:</label>
+                <input type="text" placeholder="Please enter your username" name="username" id="text" required>
+            </p>
+            <p>
+                <label for="select">Select:</label>
+                <select name="city" id="select">
+                    <option value="default">Select city</option>
+                    <optgroup label="Group 1">
+                        <option value="pune">Pune</option>
+                        <option value="kolhapur">Kolhapur</option>
+                    </optgroup>
+                    <option value="nagpur">Nagpur</option>
+                    <option value="nashik">Nashik</option>
+                </select>
+            </p>
+        </fieldset>
+        <p>
+            <label for="textarea">Textarea:</label>
+            <br>
+            <textarea name="textarea" id="textarea" placeholder="Please enter your message"></textarea>
+        </p>
+        <p>
+            <label for="button">Button:</label>
+            <button type="button">Click here</button>
+        </p>
+        <p>
+            <label for="datalist">Datalist:</label>
+            <input list="datalist">
+            <datalist id="datalist">
+                <option value="India">
+                <option value="USA">
+                <option value="China">
+                <option value="France">
+            </datalist>
+        </p>
+        <p>
+            <output>This is output</output>
+        </p>
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Javascript</title>
+    <style>
+        button {
+            cursor: pointer;
+        }
+        .dark{
+            background: rgb(53, 54, 58);
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline JS -->
+    <button onclick="document.querySelectorAll('body')[0].classList.toggle('dark')">Click here</button>
+    <h1></h1>
+
+    <script>
+        alert('This is another alert from external JS!')
+        //Internal JS
+        document.querySelectorAll('h1')[0].innerHTML = 'Hello there!'
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

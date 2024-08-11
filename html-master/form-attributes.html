@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Form attributes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        form {
+            width: 80%;
+            max-width: 250px;
+            margin: 10% auto;
+            padding: 16px;
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        input {
+            width: 100%;
+            margin: 0;
+        }
+        input[type=submit] {
+            cursor: pointer;
+            background: lightblue;
+            border: 0;
+            padding: 4px 8px;
+        }
+        input[type=submit]:hover {
+            background: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <form action="thankyou.html" method="post" target="_blank" novalidate autocomplete="off">
+        <h1>Login</h1>
+        <p>
+            <input type="text" placeholder="Please enter your username" name="username" required>
+        </p>
+        <p>
+            <input type="password" placeholder="Please enter your password" name="password" required>
+        </p>
+        <input type="submit">
+    </form>
+</body>
+</html>

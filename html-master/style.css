@@ -1,0 +1,12 @@
+/*External stylesheet*/
+body {
+    background: lightgreen;
+}
+body {
+    background: rgb(255 192 50);
+}
+
+h1 {
+    color: rgb(0 0 0 / 80%);
+    font-family: system-ui;
+}
